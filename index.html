@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>二手書書籍販賣平台</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <h1>二手書，尋寶在此</h1>
+        <p>高品質二手書，低價格。立刻註冊，開始購買！</p>
+        <a href="#register" class="btn">立即註冊</a>
+    </header>
+
+    <!-- Featured Books Section -->
+    <section class="featured-books">
+        <h2>特選書籍</h2>
+        <div class="book-list">
+            <div class="book-item">
+                <img src="images/book1.jpg" alt="Book 1">
+                <h3>書籍名稱 1</h3>
+                <p>作者: 作者名 1</p>
+                <p>價格: $100</p>
+                <button class="btn add-to-cart">加入購物車</button>
+            </div>
+            <div class="book-item">
+                <img src="images/book2.jpg" alt="Book 2">
+                <h3>書籍名稱 2</h3>
+                <p>作者: 作者名 2</p>
+                <p>價格: $80</p>
+                <button class="btn add-to-cart">加入購物車</button>
+            </div>
+            <!-- More books can be added here -->
+        </div>
+    </section>
+
+    <!-- Search & Filter Section -->
+    <section class="search-filter">
+        <h2>搜尋與篩選</h2>
+        <input type="text" id="search-bar" placeholder="搜索書名、作者...">
+        <div class="filters">
+            <label for="price-range">價格範圍:</label>
+            <input type="range" id="price-range" min="0" max="500">
+            <select id="category">
+                <option value="all">所有類別</option>
+                <option value="fiction">小說</option>
+                <option value="non-fiction">非小說</option>
+                <!-- More categories -->
+            </select>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about-us">
+        <h2>關於我們</h2>
+        <p>我們的使命是讓愛書的人以更低的成本獲得珍貴的書籍，並支持環保事業。</p>
+    </section>
+
+    <!-- User Testimonials Section -->
+    <section class="testimonials">
+        <h2>用戶評價</h2>
+        <div class="testimonial">
+            <p>"這裡的書籍品質很棒，我找到了一些絕版的好書！"</p>
+            <p>- 滿意客戶</p>
+        </div>
+        <div class="testimonial">
+            <p>"價格很公道，配送速度也很快。"</p>
+            <p>- 滿意客戶</p>
+        </div>
+    </section>
+
+    <!-- Registration Section -->
+    <section id="register" class="register">
+        <h2>註冊</h2>
+        <form>
+            <label for="name">姓名:</label>
+            <input type="text" id="name" required>
+            <label for="email">電子郵件:</label>
+            <input type="email" id="email" required>
+            <label for="password">密碼:</label>
+            <input type="password" id="password" required>
+            <button type="submit" class="btn">加入我們</button>
+        </form>
+    </section>
+
+    <!-- Cart & Checkout Section -->
+    <section class="cart-checkout">
+        <h2>購物車</h2>
+        <div id="cart-items">
+            <!-- Cart items will be dynamically inserted here -->
+        </div>
+        <button class="btn" id="checkout">結帳</button>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section class="contact-us">
+        <h2>聯絡我們</h2>
+        <form>
+            <label for="message">訊息:</label>
+            <textarea id="message" required></textarea>
+            <button type="submit" class="btn">送出</button>
+        </form>
+        <p>客服郵件: support@secondbook.com</p>
+        <p>電話號碼: 123-456-789</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 二手書書籍販賣平台</p>
+        <div class="social-links">
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
